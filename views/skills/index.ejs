@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express Skills Lab</title>
+</head>
+<body>
+    <h1>Engineer Skills</h1>
+    <ul>
+      <% skills.forEach(s => { %>
+        <li>
+          <a href="/skills/<%=s.id %>"><%= s.skill %></a> 
+            - 
+          <%= s.gained ? "gained" : "Not gained" %>
+          <form action="/skills/<%=s.id %>?_method=DELETE" class="delete-form" method="POST">
+            <button type="submit">Delete Engineer Skill</button>
+          </form>
+        </li>
+      <% }); %>
+    </ul>
+    <a href="/skills/new">Add New Skill</a>
+</body>
+</html>

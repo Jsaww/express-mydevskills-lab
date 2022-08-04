@@ -1,0 +1,24 @@
+{
+  "name": "express-mydevskills-lab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jsaww/express-mydevskills-lab.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jsaww/express-mydevskills-lab/issues"
+  },
+  "homepage": "https://github.com/Jsaww/express-mydevskills-lab#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "method-override": "^3.0.0"
+  }
+}
